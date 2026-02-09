@@ -19,7 +19,9 @@ class DatabaseSeeder extends Seeder
           $this->call([
             UserSeeder::class,
             HeroSeeder::class,
-            PartnerSeeder::class
+            PartnerSeeder::class,
+            FooterSeeder::class,
+            ParallaxSeeder::class
           ]);  
     }
 }
