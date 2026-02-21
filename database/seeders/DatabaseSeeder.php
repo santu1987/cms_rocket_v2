@@ -21,7 +21,10 @@ class DatabaseSeeder extends Seeder
             HeroSeeder::class,
             PartnerSeeder::class,
             FooterSeeder::class,
-            ParallaxSeeder::class
+            ParallaxSeeder::class,
+            SocialNetworkSeeder::class,
+            ProductTypeSeeder::class,
+            ProductSeeder::class
           ]);  
     }
 }

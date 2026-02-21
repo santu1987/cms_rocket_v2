@@ -10,8 +10,13 @@ class ParallaxSeeder extends Seeder
     public function run(): void
     {
         Parallax::create([
-            'title' => 'Nuestra Visión en Movimiento',
-            'image' => 'parallax/default-bg.jpg',
-        ]);
+            'title' => 'Partners',
+            'image' => 'img/parallax/firebreak-parallax-partners.png',
+        ],);
+        
+        Parallax::create([
+            'title' => 'CONTÁCTANOS',
+            'image' => 'img/parallax/firebreak-parallax-contactanos2.png',
+        ],);
     }
 }

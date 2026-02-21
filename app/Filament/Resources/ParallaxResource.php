@@ -16,7 +16,9 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ParallaxResource extends Resource
 {
     protected static ?string $model = Parallax::class;
-
+    
+    protected static ?int $navigationSort = 2;
+    
     protected static ?string $navigationIcon = 'heroicon-o-sparkles';
     protected static ?string $navigationLabel = 'Efectos Parallax';
 

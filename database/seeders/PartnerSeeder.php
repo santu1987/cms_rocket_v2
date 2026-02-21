@@ -12,13 +12,13 @@ class PartnerSeeder extends Seeder
         Partner::create([
             'description' => 'Axioma debvelopers.',
             'url'=>'',
-            'imagen' => 'partners/logo-default.png', // Ruta simulada
+            'imagen' => 'img/partners/axioma_logo.png', 
         ]);
 
         Partner::create([
             'description' => 'Instituto universitario Jesús Obrero',
             'url'=>'',
-            'imagen' => 'partners/logo-default-2.png',
+            'imagen' => 'img/partners/IUJO_logo.gif',
         ]);
     }
 }

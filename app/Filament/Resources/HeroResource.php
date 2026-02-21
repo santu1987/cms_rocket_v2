@@ -20,6 +20,8 @@ class HeroResource extends Resource
 {
     protected static ?string $model = Hero::class;
 
+    protected static ?int $navigationSort = 1;
+
     protected static ?string $navigationIcon = 'heroicon-o-presentation-chart-bar';
     
     protected static ?string $navigationLabel = 'Banner Principal (Hero)';

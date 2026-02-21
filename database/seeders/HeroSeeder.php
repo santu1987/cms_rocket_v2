@@ -13,6 +13,7 @@ class HeroSeeder extends Seeder
             'titulo1' => 'Calidad y seguridad garantizada para tu vehículo',
             'titulo2' => 'Frena con confianza en cada kilómetro',
             'titulo3' => '',
+            'video' => 'img/hero/videos/frenos.mp4',
             'cta' => 'COMPRA TUS FRENOS HOY!',
             'url_cta' => '#productos',
             'status' => true,

@@ -1,0 +1,44 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            
+            // Relación con Tipos de Productos
+            $table->foreignId('product_type_id')
+                ->constrained('product_types')
+                ->onDelete('cascade');
+
+            $table->string('code')->unique();
+            $table->string('title');
+            $table->text('description')->nullable();
+            
+            // Precios como enteros según solicitaste
+            $table->integer('price')->default(0);
+            $table->integer('d_price')->nullable(); // Precio de descuento (entero)
+            
+            $table->string('img')->nullable();
+            $table->boolean('status')->default(1); // 1 = Activo, 0 = Inactivo
+            
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('products');
+    }
+};

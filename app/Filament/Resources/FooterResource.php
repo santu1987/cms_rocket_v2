@@ -17,6 +17,8 @@ class FooterResource extends Resource
 {
     protected static ?string $model = Footer::class;
 
+    protected static ?int $navigationSort = 8;
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-group';
     protected static ?string $navigationLabel = 'Pie de Página (Footer)';
 
