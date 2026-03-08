@@ -24,6 +24,12 @@ return new class extends Migration
             $table->string('rif');
             $table->string('phone_number');
             
+            //Descirpciones
+            $table->string('desc1')->nullable();
+            $table->string('desc2')->nullable();
+            $table->string('desc3')->nullable();
+            $table->string('desc4')->nullable();
+
             // Estado booleano
             $table->boolean('status')->default(true);
             
